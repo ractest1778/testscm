@@ -1,0 +1,17 @@
+- defaultTab: nodes
+  description: ''
+  executionEnabled: true
+  id: 8afcf743-e719-423a-b495-1536c9f74f71
+  loglevel: INFO
+  name: HelloWorld
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: null
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - exec: whoami
+    keepgoing: false
+    strategy: node-first
+  uuid: 8afcf743-e719-423a-b495-1536c9f74f71
+
