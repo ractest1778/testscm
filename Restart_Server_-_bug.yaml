@@ -1,0 +1,36 @@
+- defaultTab: output
+  description: ''
+  executionEnabled: true
+  group: ZZ Tests/Windows
+  id: dcd01789-45c2-438d-b124-24e3005e4b5a
+  loglevel: INFO
+  name: Restart Server - bug
+  nodeFilterEditable: false
+  options:
+  - enforced: true
+    name: App
+    required: true
+    values:
+    - Alpha
+    - Beta
+    valuesListDelimiter: ','
+  - delimiter: ' '
+    enforced: true
+    multivalueAllSelected: true
+    multivalued: true
+    name: Servers
+    required: true
+    valuesUrl: file:/home/m68k/Downloads/list.json
+  plugins:
+    ExecutionLifecycle: null
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - script: |-
+        #!/bin/bash
+
+        echo App = "@option.App@"
+        echo Servers = "@option.Servers@"
+    keepgoing: false
+    strategy: parallel
+  uuid: dcd01789-45c2-438d-b124-24e3005e4b5a

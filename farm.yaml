@@ -1,0 +1,14 @@
+- Homestar.local:
+  description: The production redis server.
+  hostname: Homestar.local
+  nodename: Homestar.local
+  tags: 'redis_server,production'
+  username: greg
+- bartholemew:
+  description: Webapp node
+  hostname: bartholemew
+  nodename: bartholemew
+  tags: 'web,app'
+  username: greg
+  app-port: 8080
+  https-port: 8443
