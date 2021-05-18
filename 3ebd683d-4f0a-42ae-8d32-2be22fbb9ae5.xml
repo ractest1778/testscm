@@ -28,7 +28,7 @@
     <schedules />
     <sequence keepgoing='false' strategy='node-first'>
       <command>
-        <exec>uname -a</exec>
+        <exec>whoami</exec>
       </command>
     </sequence>
     <uuid>3ebd683d-4f0a-42ae-8d32-2be22fbb9ae5</uuid>
