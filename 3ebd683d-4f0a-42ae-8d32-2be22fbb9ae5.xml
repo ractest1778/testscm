@@ -1,0 +1,36 @@
+<joblist>
+  <job>
+    <context>
+      <options preserveOrder='true'>
+        <option name='mynodes' value='node.*' />
+      </options>
+    </context>
+    <defaultTab>nodes</defaultTab>
+    <description></description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <id>3ebd683d-4f0a-42ae-8d32-2be22fbb9ae5</id>
+    <loglevel>INFO</loglevel>
+    <name>JobDispatchedToNodes</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>${option.mynodes}</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <plugins />
+    <scheduleEnabled>true</scheduleEnabled>
+    <schedules />
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>uname -a</exec>
+      </command>
+    </sequence>
+    <uuid>3ebd683d-4f0a-42ae-8d32-2be22fbb9ae5</uuid>
+  </job>
+</joblist>
