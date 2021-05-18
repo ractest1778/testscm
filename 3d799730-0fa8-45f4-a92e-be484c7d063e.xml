@@ -1,0 +1,42 @@
+<joblist>
+  <job>
+    <context>
+      <options preserveOrder='true'>
+        <option name='opt1' value='one' />
+      </options>
+    </context>
+    <defaultTab>nodes</defaultTab>
+    <description></description>
+    <executionEnabled>true</executionEnabled>
+    <id>3d799730-0fa8-45f4-a92e-be484c7d063e</id>
+    <loglevel>INFO</loglevel>
+    <name>JobWithRuleset</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <plugins />
+    <scheduleEnabled>true</scheduleEnabled>
+    <schedules />
+    <sequence keepgoing='false' strategy='ruleset'>
+      <command>
+        <exec>echo "step one"</exec>
+      </command>
+      <command>
+        <exec>echo "step two"</exec>
+      </command>
+      <command>
+        <exec>echo "step three"</exec>
+      </command>
+      <command>
+        <exec>echo "conditional step"</exec>
+      </command>
+      <pluginConfig>
+        <WorkflowStrategy>
+          <ruleset>
+            <rules><![CDATA[[*] run-in-sequence
+[4] if:option.opt1==one]]></rules>
+          </ruleset>
+        </WorkflowStrategy>
+      </pluginConfig>
+    </sequence>
+    <uuid>3d799730-0fa8-45f4-a92e-be484c7d063e</uuid>
+  </job>
+</joblist>
