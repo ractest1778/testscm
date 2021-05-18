@@ -12,7 +12,7 @@
       rankOrder: ascending
       successOnEmptyNodeFilter: false
       threadcount: '1'
-    filter: 'name: windows'
+    filter: 'name: .*'
   nodesSelectedByDefault: true
   plugins:
     ExecutionLifecycle: null
