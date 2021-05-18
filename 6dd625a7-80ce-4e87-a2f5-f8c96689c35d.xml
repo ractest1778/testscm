@@ -1,0 +1,31 @@
+<joblist>
+  <job>
+    <calendars>
+      <calendar name='MyCALENDAR' />
+    </calendars>
+    <defaultTab>nodes</defaultTab>
+    <description></description>
+    <executionEnabled>true</executionEnabled>
+    <id>6dd625a7-80ce-4e87-a2f5-f8c96689c35d</id>
+    <loglevel>INFO</loglevel>
+    <name>JobScheduled</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <plugins />
+    <schedule>
+      <month month='*' />
+      <time hour='*' minute='*' seconds='0/30' />
+      <weekday day='*' />
+      <year year='*' />
+    </schedule>
+    <scheduleEnabled>true</scheduleEnabled>
+    <schedules>
+      <schedule name='MySCHEDULE' />
+    </schedules>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>echo "hello world!"</exec>
+      </command>
+    </sequence>
+    <uuid>6dd625a7-80ce-4e87-a2f5-f8c96689c35d</uuid>
+  </job>
+</joblist>
